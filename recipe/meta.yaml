@@ -1,4 +1,4 @@
-{% set version = "0.9" %}
+{% set version = "1.0" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,11 +10,11 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/binsreg_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/binsreg/binsreg_{{ version }}.tar.gz
-  sha256: d82dff904aecf63a472e953b90d3198eab80ccf6efcb737f43375e8584469eec
+  sha256: 6925c1dc8f3670f7efb18624af9e56ee6be9f54942508a72df05297d0b814ed3
 
 build:
   merge_build_host: true  # [win]
-  number: 1
+  number: 0
   noarch: generic
   rpaths:
     - lib/R/lib/
