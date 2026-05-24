@@ -1,4 +1,4 @@
-{% set version = "2.0" %}
+{% set version = "2.1" %}
 {% set posix = 'm2-' if win else '' %}
 
 package:
@@ -9,7 +9,7 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/binsreg_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/binsreg/binsreg_{{ version }}.tar.gz
-  sha256: d1eb1898ba1c2dc736e8613805f72a0816a2d0310bc87565f7890636ec78e180
+  sha256: 70c1b67461918441d0735a5d4c19e67f0de45fad815fd7c7620afc83ddb61bc1
 
 build:
   number: 0
@@ -45,24 +45,14 @@ test:
     - "\"%R%\" -e \"library('binsreg')\""  # [win]
 
 about:
-  home: https://CRAN.R-project.org/package=binsreg
+  home: https://nppackages.github.io/
+  dev_url: https://github.com/nppackages/binsreg
   license: GPL-3.0-only
-  summary: Provides tools for statistical analysis using the binscatter methods developed by
-    Cattaneo, Crump, Farrell and Feng (2024) <https://nppackages.github.io/references/Cattaneo-Crump-Farrell-Feng_2024_AER.pdf>,
-    Cattaneo, Crump, Farrell and Feng (2025) <https://nppackages.github.io/references/Cattaneo-Crump-Farrell-Feng_2025_Stata.pdf>
-    and Cattaneo, Crump, Farrell and Feng (2026) <https://nppackages.github.io/references/Cattaneo-Crump-Farrell-Feng_2026_RESTAT.pdf>.
-    Binscatter provides a flexible way of describing the relationship between two variables
-    based on partitioning/binning of the independent variable of interest. binsreg(),
-    binsqreg() and binsglm() implement binscatter least squares regression, quantile
-    regression and generalized linear regression respectively, with particular focus
-    on constructing binned scatter plots. They also implement robust (pointwise and
-    uniform) inference of regression functions and derivatives thereof. binstest() implements
-    hypothesis testing procedures for parametric functional forms of and nonparametric
-    shape restrictions on the regression function. binspwc() implements hypothesis testing
-    procedures for pairwise group comparison of binscatter estimators. binsregselect()
-    implements data-driven procedures for selecting the number of bins for binscatter
-    estimation. All the commands allow for covariate adjustment, smoothness restrictions
-    and clustering.
+  summary: Provides tools for statistical analysis using the binscatter methods developed by Cattaneo, Crump, Farrell and Feng (2024) <https://nppackages.github.io/references/Cattaneo-Crump-Farrell-Feng_2024_AER.pdf>, Cattaneo, Crump, Farrell and Feng (2025) 
+    <https://nppackages.github.io/references/Cattaneo-Crump-Farrell-Feng_2025_Stata.pdf> and Cattaneo, Crump, Farrell and Feng (2026) <https://nppackages.github.io/references/Cattaneo-Crump-Farrell-Feng_2026_RESTAT.pdf>. Binscatter provides a flexible way of describing the relationship between two variables based on 
+    partitioning/binning of the independent variable of interest. binsreg(), binsqreg() and binsglm() implement binscatter least squares regression, quantile regression and generalized linear regression respectively, with particular focus on constructing binned scatter plots. They also implement robust (pointwise and 
+    uniform) inference of regression functions and derivatives thereof. binstest() implements hypothesis testing procedures for parametric functional forms of and nonparametric shape restrictions on the regression function. binspwc() implements hypothesis testing procedures for pairwise group comparison of binscatter 
+    estimators. binsregselect() implements data-driven procedures for selecting the number of bins for binscatter estimation. All the commands allow for covariate adjustment, smoothness restrictions and clustering.
   license_family: GPL3
   license_file:
     - {{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-3
