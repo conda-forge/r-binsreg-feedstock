@@ -3,7 +3,7 @@
 
 package:
   name: r-binsreg
-  version: {{ version|replace("-", "_") }}
+  version: "{{ version|replace("-", "_") }}"
 
 source:
   url:
@@ -45,7 +45,8 @@ test:
     - "\"%R%\" -e \"library('binsreg')\""  # [win]
 
 about:
-  home: https://CRAN.R-project.org/package=binsreg
+  home: https://nppackages.github.io/
+  dev_url: https://github.com/nppackages/binsreg
   license: GPL-3.0-only
   summary: Provides tools for statistical analysis using the binscatter methods developed by Cattaneo, Crump, Farrell and Feng (2024) <https://nppackages.github.io/references/Cattaneo-Crump-Farrell-Feng_2024_AER.pdf>, Cattaneo, Crump, Farrell and Feng (2025) 
     <https://nppackages.github.io/references/Cattaneo-Crump-Farrell-Feng_2025_Stata.pdf> and Cattaneo, Crump, Farrell and Feng (2026) <https://nppackages.github.io/references/Cattaneo-Crump-Farrell-Feng_2026_RESTAT.pdf>. Binscatter provides a flexible way of describing the relationship between two variables based on 
