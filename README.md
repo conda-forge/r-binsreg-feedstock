@@ -3,11 +3,13 @@ About r-binsreg-feedstock
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-binsreg-feedstock/blob/main/LICENSE.txt)
 
-Home: https://CRAN.R-project.org/package=binsreg
+Home: https://nppackages.github.io/
 
 Package license: GPL-3.0-only
 
 Summary: Provides tools for statistical analysis using the binscatter methods developed by Cattaneo, Crump, Farrell and Feng (2024) <https://nppackages.github.io/references/Cattaneo-Crump-Farrell-Feng_2024_AER.pdf>, Cattaneo, Crump, Farrell and Feng (2025) <https://nppackages.github.io/references/Cattaneo-Crump-Farrell-Feng_2025_Stata.pdf> and Cattaneo, Crump, Farrell and Feng (2026) <https://nppackages.github.io/references/Cattaneo-Crump-Farrell-Feng_2026_RESTAT.pdf>. Binscatter provides a flexible way of describing the relationship between two variables based on partitioning/binning of the independent variable of interest. binsreg(), binsqreg() and binsglm() implement binscatter least squares regression, quantile regression and generalized linear regression respectively, with particular focus on constructing binned scatter plots. They also implement robust (pointwise and uniform) inference of regression functions and derivatives thereof. binstest() implements hypothesis testing procedures for parametric functional forms of and nonparametric shape restrictions on the regression function. binspwc() implements hypothesis testing procedures for pairwise group comparison of binscatter estimators. binsregselect() implements data-driven procedures for selecting the number of bins for binscatter estimation. All the commands allow for covariate adjustment, smoothness restrictions and clustering.
+
+Development: https://github.com/nppackages/binsreg
 
 Current build status
 ====================
