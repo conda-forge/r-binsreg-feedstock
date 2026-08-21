@@ -1,15 +1,15 @@
-{% set version = "2.1" %}
+{% set version = "2.2" %}
 {% set posix = 'm2-' if win else '' %}
 
 package:
   name: r-binsreg
-  version: "{{ version|replace("-", "_") }}"
+  version: {{ version|replace("-", "_") }}
 
 source:
   url:
     - {{ cran_mirror }}/src/contrib/binsreg_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/binsreg/binsreg_{{ version }}.tar.gz
-  sha256: 70c1b67461918441d0735a5d4c19e67f0de45fad815fd7c7620afc83ddb61bc1
+  sha256: 4b43a5e4feec83fa01b4e0ea623fa040c3009d2778d4d81716a65659efe54213
 
 build:
   number: 0
